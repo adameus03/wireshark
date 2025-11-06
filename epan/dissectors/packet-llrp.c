@@ -1748,7 +1748,7 @@ dissect_llrp_impinj_parameter(tvbuff_t *tvb, packet_info *pinfo, proto_tree *par
         suboffset += 2;
         break;
     case LLRP_IMPINJ_PARAM_RF_DOPPLER_FREQ:
-        proto_tree_add_item(param_tree, hf_llrp_doppler_freq, tvb, suboffset, 2, ENC_BIG_ENDIAN);
+        proto_tree_add_item(param_tree, hf_llrp_doppler_frequency, tvb, suboffset, 2, ENC_BIG_ENDIAN);
         suboffset += 2;
         break;
     case LLRP_IMPINJ_PARAM_PEAK_RSSI:
